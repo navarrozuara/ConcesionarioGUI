@@ -70,6 +70,7 @@ public class Principal {
 		frame.setJMenuBar(menuBar);
 		
 		mnArchivo = new JMenu("Archivo");
+		mnArchivo.setMnemonic('A');
 		menuBar.add(mnArchivo);
 		
 		JMenuItem mntmNuevoConcesionario = new JMenuItem("Nuevo concesionario");
@@ -100,6 +101,7 @@ public class Principal {
 		mnArchivo.add(mntmSalir);
 		
 		mnCoche = new JMenu("Coche");
+		mnCoche.setMnemonic('C');
 		menuBar.add(mnCoche);
 		
 		JMenuItem mntmAlta = new JMenuItem("Alta");
@@ -129,6 +131,7 @@ public class Principal {
 		mnCoche.add(mntmMostrarConcesionario);
 		
 		mnBuscar = new JMenu("Buscar");
+		mnBuscar.setMnemonic('B');
 		menuBar.add(mnBuscar);
 		
 		JMenuItem mntmCochePorMatricula = new JMenuItem("Por matr\u00EDcula...");
@@ -148,6 +151,7 @@ public class Principal {
 		mnBuscar.add(mntmCochePorColor);
 		
 		mnAyuda = new JMenu("Ayuda");
+		mnAyuda.setMnemonic('A');
 		menuBar.add(mnAyuda);
 		
 		JMenuItem mntmAyuda = new JMenuItem("Ayuda");
@@ -198,6 +202,12 @@ public class Principal {
 	}
 	
 	private void mostrarPorMatricula() {
+		if (concesionario.size() == 0) {
+			JOptionPane.showMessageDialog(frame.getContentPane(),
+					"No hay coches en el concesionario.", "Error",
+					JOptionPane.ERROR_MESSAGE);
+			return;
+		}
 		mostrarPorMatricula = new MostrarPorMatricula(concesionario);
 		mostrarPorMatricula.setVisible(true);
 	}

@@ -17,28 +17,12 @@ public class MostrarPorColor extends VentanaPadre {
 	private Concesionario concesionario;
 	private int indiceCoche = -1;
 
-//	/**
-//	 * Launch the application.
-//	 */
-//	public static void main(String[] args) {
-//		try {
-//			MostrarPorColor dialog = new MostrarPorColor();
-//			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-//			dialog.setVisible(true);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//	}
-
 	/**
 	 * Create the dialog.
 	 */
 	public MostrarPorColor(ArrayList<Coche> concesionario) {
 		super();
 		setTitle("Mostrar por color");
-		setResizable(false);
-		setModal(true);
-		setBounds(100, 100, 388, 232);
 		
 		this.concesionario = generarConcesionario(concesionario);
 		

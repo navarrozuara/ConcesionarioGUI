@@ -23,28 +23,12 @@ public class Alta extends VentanaPadre {
 	 */
 	private static final long serialVersionUID = 1L;
 
-//	/**
-//	 * Launch the application.
-//	 */
-//	public static void main(String[] args) {
-//		try {
-//			Alta dialog = new Alta();
-//			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-//			dialog.setVisible(true);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//	}
-
 	/**
 	 * Create the dialog.
 	 */
 	public Alta(Concesionario concesionario) {
 		super();
 		setTitle("Alta");
-		setResizable(false);
-		setModal(true);
-		setBounds(100, 100, 388, 232);
 		
 		eliminar.setVisible(false);
 		buscar.setVisible(false);

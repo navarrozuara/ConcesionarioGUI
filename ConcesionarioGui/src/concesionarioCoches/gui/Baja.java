@@ -15,28 +15,12 @@ public class Baja extends VentanaPadre {
 	 */
 	private static final long serialVersionUID = 1L;
 
-//	/**
-//	 * Launch the application.
-//	 */
-//	public static void main(String[] args) {
-//		try {
-//			Baja dialog = new Baja();
-//			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-//			dialog.setVisible(true);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//	}
-
 	/**
 	 * Create the dialog.
 	 */
 	public Baja(Concesionario concesionario) {
 		super();
 		setTitle("Baja");
-		setResizable(false);
-		setModal(true);
-		setBounds(100, 100, 388, 232);
 		
 		annadir.setVisible(false);
 		buscar.setVisible(false);
@@ -63,6 +47,7 @@ public class Baja extends VentanaPadre {
 					switch (n) {
 					case JOptionPane.YES_OPTION:
 						concesionario.eliminar(textField.getText());
+						clear();
 						break;
 					}
 				} else {
@@ -74,6 +59,13 @@ public class Baja extends VentanaPadre {
 		});
 	}
 	
+	private void clear() {
+		textField.setText("");
+		buttonGroup.clearSelection();
+		comboBoxMarca.setSelectedItem(null);
+		comboBoxModelo.setSelectedItem(null);	
+	}
+
 	private void mostrarCoche(Coche coche) {
 		switch (coche.getColor()) {
 		case PLATA:

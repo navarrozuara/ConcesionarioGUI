@@ -15,28 +15,12 @@ public class MostrarPorMatricula extends VentanaPadre {
 	 */
 	private static final long serialVersionUID = 1L;
 
-//	/**
-//	 * Launch the application.
-//	 */
-//	public static void main(String[] args) {
-//		try {
-//			MostrarPorMatricula dialog = new MostrarPorMatricula();
-//			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-//			dialog.setVisible(true);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//	}
-
 	/**
 	 * Create the dialog.
 	 */
 	public MostrarPorMatricula(Concesionario concesionario) {
 		super();
 		setTitle("Mostrar por matricula");
-		setResizable(false);
-		setModal(true);
-		setBounds(100, 100, 388, 232);
 		
 		annadir.setVisible(false);
 		eliminar.setVisible(false);

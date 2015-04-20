@@ -34,22 +34,8 @@ public class ElegirColor extends JDialog {
 	private JRadioButton radioButtonAzul;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
 	private JButton aceptar;
-	private MostrarPorColor mostrarPorColor;
-
 	private JButton salir;
-	
-//	/**
-//	 * Launch the application.
-//	 */
-//	public static void main(String[] args) {
-//		try {
-//			ElegirColor dialog = new ElegirColor();
-//			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-//			dialog.setVisible(true);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//	}
+	private MostrarPorColor mostrarPorColor;
 
 	/**
 	 * Create the dialog.

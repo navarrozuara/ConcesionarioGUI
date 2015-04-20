@@ -1,10 +1,6 @@
 package concesionarioCoches.gui;
 
-import java.awt.Dialog;
 import java.awt.FlowLayout;
-import java.awt.Frame;
-import java.awt.GraphicsConfiguration;
-import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -49,6 +45,9 @@ public class VentanaPadre extends JDialog {
 
 	public VentanaPadre() {
 		super();
+		setResizable(false);
+		setModal(true);
+		setBounds(100, 100, 388, 232);
 		
 		lblMatricula = new JLabel("Matr\u00EDcula");
 		lblMatricula.setBounds(26, 11, 76, 30);
@@ -125,69 +124,6 @@ public class VentanaPadre extends JDialog {
 		getContentPane().add(textField);
 		contentPanel.setLayout(new FlowLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
-	}
-
-	public VentanaPadre(Frame arg0) {
-		super(arg0);
-	}
-
-	public VentanaPadre(Dialog arg0) {
-		super(arg0);
-	}
-
-	public VentanaPadre(Window arg0) {
-		super(arg0);
-	}
-
-	public VentanaPadre(Frame arg0, boolean arg1) {
-		super(arg0, arg1);
-	}
-
-	public VentanaPadre(Frame arg0, String arg1) {
-		super(arg0, arg1);
-	}
-
-	public VentanaPadre(Dialog arg0, boolean arg1) {
-		super(arg0, arg1);
-	}
-
-	public VentanaPadre(Dialog arg0, String arg1) {
-		super(arg0, arg1);
-	}
-
-	public VentanaPadre(Window arg0, ModalityType arg1) {
-		super(arg0, arg1);
-	}
-
-	public VentanaPadre(Window arg0, String arg1) {
-		super(arg0, arg1);
-	}
-
-	public VentanaPadre(Frame arg0, String arg1, boolean arg2) {
-		super(arg0, arg1, arg2);
-	}
-
-	public VentanaPadre(Dialog arg0, String arg1, boolean arg2) {
-		super(arg0, arg1, arg2);
-	}
-
-	public VentanaPadre(Window arg0, String arg1, ModalityType arg2) {
-		super(arg0, arg1, arg2);
-	}
-
-	public VentanaPadre(Frame arg0, String arg1, boolean arg2,
-			GraphicsConfiguration arg3) {
-		super(arg0, arg1, arg2, arg3);
-	}
-
-	public VentanaPadre(Dialog arg0, String arg1, boolean arg2,
-			GraphicsConfiguration arg3) {
-		super(arg0, arg1, arg2, arg3);
-	}
-
-	public VentanaPadre(Window arg0, String arg1, ModalityType arg2,
-			GraphicsConfiguration arg3) {
-		super(arg0, arg1, arg2, arg3);
 	}
 
 }
