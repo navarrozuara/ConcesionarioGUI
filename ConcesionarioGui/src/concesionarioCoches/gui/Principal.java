@@ -26,7 +26,7 @@ public class Principal {
 	private JMenu mnAyuda;
 	private Concesionario concesionario = new Concesionario();
 	private Alta alta;
-	private VentanaPadre baja;
+	private Baja baja;
 	private Mostrar mostrar;
 	private ElegirColor elegirColor;
 	private MostrarPorMatricula mostrarPorMatricula;
@@ -62,7 +62,7 @@ public class Principal {
 		
 		frame = new JFrame();
 		frame.setResizable(false);
-		frame.setTitle("Concesionario IES Gran Capit·n");
+		frame.setTitle("Concesionario IES Gran Capit√°n");
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
